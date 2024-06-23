@@ -14,13 +14,13 @@ class RowExample extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
         body: Container(
-          margin: const EdgeInsets.all(10),
-          child: const Row(
+          padding: const EdgeInsets.all(10),
+          child: const Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Cell 1'),
-              Text('Cell 2'),
-              Text('Cell 3'),
+              Text('row 1'),
+              Text('row 2'),
+              Text('row 3'),
             ],
           ),
         ),
