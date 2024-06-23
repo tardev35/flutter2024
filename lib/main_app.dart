@@ -10,7 +10,11 @@ class MainApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.deepOrange),
         home: Scaffold(
           appBar: AppBar(
-              title: const Text('My App Flutter'),
+              title: const Text('Kin Plen Snack'),
+              titleTextStyle: const TextStyle(
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  fontWeight: FontWeight.w600,
+                  fontSize: 22),
               backgroundColor: const Color.fromARGB(255, 6, 208, 77),
               actions: <Widget>[
                 PopupMenuButton<String>(
@@ -52,7 +56,13 @@ class MainApp extends StatelessWidget {
                 )
               ]),
           body: const Center(
-            child: Text('Wellcome Flutter'),
+            child: Text(
+              'Wellcome Flutter',
+              style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromARGB(255, 204, 48, 0)),
+            ),
           ),
         ));
   }
