@@ -35,17 +35,22 @@ class RowExample extends StatelessWidget {
               const SizedBox(height: 10),
               const TextField(
                 decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Color.fromARGB(255, 184, 199, 224),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10),
-                      ),
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 184, 199, 224),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10),
                     ),
-                    prefixIcon: Icon(
-                      Icons.person,
-                      color: Color.fromARGB(255, 98, 123, 182),
-                    )),
+                  ),
+                  prefixIcon: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 98, 123, 182),
+                  ),
+                  suffixIcon: Padding(
+                    padding: EdgeInsetsDirectional.only(end: 10),
+                    child: Icon(Icons.arrow_right),
+                  ),
+                ),
                 style: TextStyle(color: Color.fromARGB(255, 35, 33, 33)),
               ),
               const SizedBox(
@@ -70,8 +75,9 @@ class RowExample extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              ElevatedButton.icon(
-                icon: Icon(Icons.login),
+              Center(
+                  child: ElevatedButton.icon(
+                icon: const Icon(Icons.login),
                 onPressed: () {
                   print('Sign In Are Pressed');
                 },
@@ -88,7 +94,7 @@ class RowExample extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(15))),
                 ),
                 label: const Text('Sign In'),
-              )
+              )),
             ],
           ),
         ),
