@@ -22,6 +22,7 @@ class CardPage extends StatelessWidget {
         title: const Text('Card App'),
         backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
+        centerTitle: true,
       ),
       body: Center(
         child: Card(

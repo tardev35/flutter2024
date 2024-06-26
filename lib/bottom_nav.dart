@@ -36,13 +36,20 @@ class _BottomNavState extends State<BottomNav> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Bottom Nav'),
+          title: const Text(
+            'Bottom Nav',
+            style: TextStyle(
+              color: (Colors.white),
+            ),
+          ),
           backgroundColor: Colors.green,
+          centerTitle: true,
         ),
         body: _children[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           onTap: onTabTapped,
           currentIndex: _currentIndex,
+          selectedItemColor: Colors.green[800],
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
