@@ -21,7 +21,10 @@ class TabPage extends StatelessWidget {
       length: 3,
       child: Scaffold(
           appBar: AppBar(
-            title: const Text('Tab App'),
+            title: const Text(
+              'Tab App',
+              style: TextStyle(color: Colors.white),
+            ),
             backgroundColor: Colors.red,
             bottom: const TabBar(
               labelColor: Colors.white,
