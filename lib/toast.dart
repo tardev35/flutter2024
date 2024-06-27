@@ -3,7 +3,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 class ToastExample extends StatelessWidget {
   const ToastExample({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
