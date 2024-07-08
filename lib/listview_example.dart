@@ -27,8 +27,22 @@ class ListviewPage extends StatelessWidget {
         backgroundColor: Colors.green[500],
         foregroundColor: Colors.white,
       ),
+      // body: ListView.builder(
+      //   itemCount: 20,
+      //   itemBuilder: (context, index) {
+      //     return ListTile(
+      //       leading: const Icon(Icons.percent),
+      //       title: Text('Person ${index + 1}'),
+      //       subtitle: const Text('Detail Description'),
+      //       trailing: const Icon(
+      //         Icons.more_vert,
+      //         color: Colors.green,
+      //       ),
+      //     );
+      //   },
+      // ),
       body: ListView(
-        padding: const EdgeInsets.all(1),
+        padding: const EdgeInsets.all(1.5),
         children: const <Widget>[
           Card(
             child: ListTile(
@@ -92,6 +106,16 @@ class ListviewPage extends StatelessWidget {
               trailing: Icon(Icons.star),
             ),
           ),
+          Card(
+            child: ListTile(
+              title: Text('Angular 14'),
+              subtitle: Text('Lern Angular UI'),
+              leading: CircleAvatar(
+                backgroundImage: AssetImage('assets/angular_logo.png'),
+              ),
+              trailing: Icon(Icons.star),
+            ),
+          )
         ],
       ),
     );
