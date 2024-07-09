@@ -81,9 +81,9 @@ class ListviewgeneratePage extends StatelessWidget {
             child: FloatingActionButton(
               onPressed: () {},
               tooltip: 'Menu 1',
-              child: Icon(Icons.call),
               backgroundColor: Colors.green[600],
               foregroundColor: Colors.white,
+              child: const Icon(Icons.call),
             ),
           ),
           Positioned(
@@ -92,9 +92,9 @@ class ListviewgeneratePage extends StatelessWidget {
             child: FloatingActionButton(
               onPressed: () {},
               tooltip: 'Menu2',
-              child: Icon(Icons.messenger),
               backgroundColor: Colors.orange,
               foregroundColor: Colors.white,
+              child: const Icon(Icons.messenger),
             ),
           )
         ],
