@@ -72,6 +72,33 @@ class ListviewgeneratePage extends StatelessWidget {
           )
         ],
       ),
+      floatingActionButton: Stack(
+        fit: StackFit.expand,
+        children: [
+          Positioned(
+            bottom: 100,
+            right: 10,
+            child: FloatingActionButton(
+              onPressed: () {},
+              tooltip: 'Menu 1',
+              child: Icon(Icons.call),
+              backgroundColor: Colors.green[600],
+              foregroundColor: Colors.white,
+            ),
+          ),
+          Positioned(
+            bottom: 30,
+            right: 10,
+            child: FloatingActionButton(
+              onPressed: () {},
+              tooltip: 'Menu2',
+              child: Icon(Icons.messenger),
+              backgroundColor: Colors.orange,
+              foregroundColor: Colors.white,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
