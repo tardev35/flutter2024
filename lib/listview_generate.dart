@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Listviewgenerate extends StatelessWidget {
   const Listviewgenerate({super.key});
@@ -35,18 +34,33 @@ class ListviewgeneratePage extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: List.generate(
-                10,
+                9,
                 (index) {
                   return Card(
-                    margin: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(8),
+                    shape: const BeveledRectangleBorder(
+                      borderRadius: BorderRadius.zero,
+                    ),
+                    elevation: 5.0,
                     child: SizedBox(
                       width: 150,
                       child: Padding(
-                        padding: const EdgeInsets.all(20.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text('Card Title $index'),
+                            Image.network('https://via.placeholder.com/150'),
+                            const SizedBox(height: 10),
+                            Text(
+                              'Card Title $index',
+                              style: const TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                                'This Is A Card Some Descrioption This Is A Card Some Descrioption')
                           ],
                         ),
                       ),
