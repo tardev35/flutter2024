@@ -47,10 +47,7 @@ class _ItemPageState extends State<ItemPage> {
                       itemCout += 1;
                     });
                   },
-                  child: const Text(
-                    "+",
-                    style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-                  ),
+                  child: const Icon(Icons.plus_one_sharp),
                 ),
                 const SizedBox(width: 20),
                 OutlinedButton(
@@ -59,10 +56,7 @@ class _ItemPageState extends State<ItemPage> {
                       itemCout = itemCout <= 0 ? 0 : itemCout - 1;
                     });
                   },
-                  child: const Text(
-                    "-",
-                    style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-                  ),
+                  child: const Icon(Icons.exposure_minus_1),
                 )
               ],
             ),
